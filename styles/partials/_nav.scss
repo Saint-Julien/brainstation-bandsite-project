@@ -1,0 +1,42 @@
+.nav {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #323232;
+
+
+        &__image {
+            padding-top: 1rem;
+
+        }
+
+        &__list {
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            width: 50%;
+            font-family: Avenir;
+            font-weight: 400;
+            
+        }
+
+        
+
+        &__item {
+            text-decoration: none;
+            display: inline
+            
+
+        }
+
+        &__link {
+            color: white;
+            text-decoration: none;
+
+        }
+    
+    
+    }
