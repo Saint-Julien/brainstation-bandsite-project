@@ -6,12 +6,12 @@
 
 .hero {
     background-image: url(../assets/images/hero-bio.jpg);
-    height: 30vh;
+    height: 50vh;
     display: flex;
     align-items: center;
 }
 .hero__title{
-    color: white;
+    color:white;
     padding-left: 1rem;
 
 
@@ -21,6 +21,51 @@
     height: 5%; 
 }
 
-.hero__title {
-    
+.about__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
 }
+
+.about__title {
+    font-family: Avenir;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-bottom: 1.2rem;
+    margin-left: 2rem;
+}
+
+.about__band-image {
+    display: block;
+    margin: 0 auto;
+    width: 95vw;
+}
+
+.about__quote {
+    font-family: Avenir;
+    font-weight: 600;
+    padding: 1rem;
+
+}
+
+.article__title {
+    margin: 1rem;  
+    font-weight: 600
+}
+
+.article__copy {
+    margin: 1rem;  
+}
+
+.photo-gallery__title {
+    font-weight: 600;
+}
+
+
+
+.footer__container {
+    background-color: #323232; 
+}
+
+
