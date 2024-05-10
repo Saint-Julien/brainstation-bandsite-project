@@ -1,7 +1,17 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323232;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: inline-flex;
+}
+
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	/* margin: 0;
-	padding: 0; */
-}
+  box-sizing: border-box;
+}/*# sourceMappingURL=bio.css.map */
