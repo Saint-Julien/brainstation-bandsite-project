@@ -110,9 +110,76 @@ body {
 }
 
 .photo-gallery__title {
-  font-weight: 600;
+  font-family: "avenir";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 2rem 0 1rem 0;
 }
 
-.footer__container {
+.photo-gallery__container {
+  background-color: #fafafa;
+  padding: 0 1rem;
+}
+
+.gallery__images {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.gallery__images-item {
+  height: 50.625vw;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.footer {
   background-color: #323232;
+  color: #ffffff;
+  padding: 0 1rem;
+  font-weight: 400;
+}
+
+.footer__title {
+  font-family: "Avenir";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 2rem 0 1.5rem 0;
+}
+
+.footer__social {
+  padding-bottom: 2rem;
+}
+
+.footer__social-link {
+  margin-right: 1.6rem;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__contact-name {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 0.813rem;
+  color: #ffffff;
+}
+
+.footer__contact-location,
+.footer__contact-link {
+  font-family: "Avenir";
+  font-weight: 400;
+  color: #afafaf;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+}
+
+.footer__copyright {
+  font-family: "Avenir";
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=bio.css.map */
