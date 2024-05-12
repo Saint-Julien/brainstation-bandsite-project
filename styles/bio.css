@@ -28,11 +28,11 @@
   transition: color 0.3s;
 }
 .nav__link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .active {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid #ffffff;
   width: 100%;
   font-weight: 600;
 }
@@ -78,7 +78,7 @@ body {
   background-position: center;
 }
 .hero__title {
-  color: white;
+  color: #ffffff;
   padding-left: 1rem;
 }
 .hero__image {
@@ -127,7 +127,7 @@ body {
 }
 
 .photo-gallery__container {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 0 1rem;
 }
 
@@ -144,7 +144,7 @@ body {
 
 .footer {
   background-color: #323232;
-  color: #FFFFFF;
+  color: #fafafa;
   padding: 0 1rem;
   font-weight: 400;
 }
@@ -168,18 +168,18 @@ body {
   font-family: "Avenir";
   font-weight: 400;
   font-size: 0.813rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer__contact-location, .footer__contact-link {
   font-family: "Avenir";
   font-weight: 400;
-  color: #AFAFAF;
+  color: #afafaf;
   text-decoration: none;
   margin-bottom: 1.25rem;
 }
 .footer__copyright {
   font-family: "Avenir";
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 2rem;
 }/*# sourceMappingURL=bio.css.map */

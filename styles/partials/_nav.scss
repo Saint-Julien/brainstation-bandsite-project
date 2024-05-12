@@ -1,9 +1,11 @@
+@use "./variables" as *;
+
 .nav {
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #323232;
+  background-color: $band-site-black;
 
   &__image {
     padding-top: 1rem;
@@ -26,20 +28,20 @@
   }
 
   &__link {
-    color: #e1e1e1;
+    color: $mercury;
     text-decoration: none;
     transition: color 0.3s;
   }
 
   &__link:hover {
-    color: #FFFFFF;
+    color: $white;
   }
 
   
 }
 
 .active {
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid $white;
   width: 100%;
   font-weight: 600;
 }
