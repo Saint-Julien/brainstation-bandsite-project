@@ -41,12 +41,13 @@
   &__link:hover {
     color: $white;
   }
-}
 
-.active {
-  border-bottom: 4px solid $white;
-  width: 100%;
-  font-weight: 600;
+  &__link--active {
+    border-bottom: 4px solid $white;
+    width: 100%;
+    font-weight: 600;
+  }
+
 }
 
 .hero {
@@ -71,13 +72,14 @@
   }
 }
 
-.about__container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-
-  .about__title {
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  &__title {
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -88,9 +90,10 @@
     margin: 0 auto;
     width: 95vw;
     padding-top: 1rem;
+    padding-left: 1rem;
   }
 
-  .about__quote {
+   &__quote {
     @include mobile-subheader-typekit;
     padding-top: 1rem;
     padding-left: 1rem;
@@ -98,33 +101,37 @@
   }
 }
 
-.article__title {
-  margin: 1rem;
-  font-weight: 600;
+.article {
+  &__title {
+    margin: 1rem;
+    font-weight: 600;
+  }
+
+  &__copy {
+    margin: 1rem;
+  }
+
 }
 
-.article__copy {
-  margin: 1rem;
-}
+.photo-gallery {
+  &__title {
+    @include mobile-section-header-typekit;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2rem 0 1rem 0;
+  }
 
-.photo-gallery__title {
-  @include mobile-section-header-typekit;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding: 2rem 0 1rem 0;
-}
+  &__container {
+    background-color: $alabaster;
+    padding: 0 1rem;
+  }
 
-.photo-gallery__container {
-  background-color: $alabaster;
-  padding: 0 1rem;
-}
-
-.photo-gallery__images {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
-
-.photo-gallery__images-item {
+  &__images {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  &__images-item {
     height: auto;
     padding: 1rem;
   }
@@ -195,6 +202,7 @@
     align-items: center;
     background-color: $band-site-black;
   }
+  
 
   .nav__image {
     max-width: 7.5rem;
@@ -223,6 +231,10 @@
 
   .about__container {
     padding: 5rem;
+  }
+
+  .about__band-image {
+    width: 80vw;
   }
 
   .article__copy-column {
@@ -289,6 +301,12 @@
     font-size: 2rem;
   }
 
+
+  .about__band-image {
+    width: 90vw;
+    
+  }
+
   .about__container {
     padding: 5rem;
   }
@@ -301,7 +319,7 @@
 
   .article__copy {
     width: 50%;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
     box-sizing: border-box;
   }
 
