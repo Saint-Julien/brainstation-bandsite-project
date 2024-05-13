@@ -1,0 +1,78 @@
+// Desktop Text Styles
+
+@mixin desk-page-header-typekit {
+    font-size: 3.75rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+
+}
+
+@mixin desk-section-header-typekit {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
+
+@mixin desk-subheader-typekit {
+    font-size: 1.5rem;
+    line-height: 2.00rem;
+    font-weight: 600;
+}
+
+@mixin desk-bodyCopy-typekit {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+
+@mixin desk-footerCopy-typekit {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400; 
+}
+
+@mixin desk-labelsButtons-typekit {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+
+// Mobile Text styles
+
+@mixin mobile-page-header-typekit {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: purple;
+}
+
+@mixin mobile-section-header-typekit {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+@mixin mobile-subheader-typekit {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+}
+
+@mixin mobile-bodyCopy-typekit {
+    font-size: .813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+@mixin mobile-footerCopy-typekit {
+    font-size: .813rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+@mixin mobile-labelsButtons-typekit {
+    font-size: 0.625rem; 
+    line-height: 1.25rem;
+    font-weight: 700;
+}

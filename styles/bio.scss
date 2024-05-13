@@ -1,15 +1,61 @@
+@use "./partials/mixins" as *;
 @use "./partials/variables" as *;
-@use "./partials/nav";
 @use "./partials/resets";
 @use "./partials/fonts";
 
+// /* for mobile*/
+
+.nav {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $band-site-black;
+
+  &__image {
+    padding-top: 1rem;
+  }
+
+  &__list {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 50%;
+    font-family: "Avenir";
+    font-weight: 400;
+  }
+
+  &__item {
+    text-decoration: none;
+    display: inline;
+  }
+
+  &__link {
+    color: $mercury;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  &__link:hover {
+    color: $white;
+  }
+}
+
+.active {
+  border-bottom: 4px solid $white;
+  width: 100%;
+  font-weight: 600;
+}
 
 .hero {
   background-image: url(../assets/images/hero-bio.jpg);
-  height: 50vh;
+  height: 12vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url("../assets/images/hero-bio.jpg");
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url("../assets/images/hero-bio.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,27 +74,30 @@
 .about__container {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 
-  &__title {
-    font-family: 'Avenir';
-    font-weight: 600;
-    font-size: 4rem;
-    padding-bottom: 1.2rem;
-    margin-left: 2rem;
+  .about__title {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+   
   }
 
   &__band-image {
     display: block;
     margin: 0 auto;
     width: 95vw;
+    padding-top: 1rem;
   }
 
-  &__quote {
-    font-family: 'Avenir';
-    font-weight: 600;
-    padding: 1rem;
-  }
+  .about__quote {
+   @include mobile-subheader-typekit;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+
 }
 
 .article__title {
@@ -61,8 +110,7 @@
 }
 
 .photo-gallery__title {
-  font-family: 'Avenir';
-  font-weight: 700;
+  @include mobile-section-header-typekit;
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 2rem 0 1rem 0;
@@ -92,12 +140,14 @@
   font-weight: 400;
 
   &__title {
-    font-family: 'Avenir';
+    font-family: "Avenir";
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 2rem 0 1.5rem 0;
+    
   }
+  
 
   &__social {
     padding-bottom: 2rem;
@@ -112,23 +162,20 @@
   }
 
   &__contact-name {
-    font-family: 'Avenir';
-    font-weight: 400;
-    font-size: .813rem;
+    @include mobile-footerCopy-typekit;
     color: $white;
   }
 
-  &__contact-location, &__contact-link {
-    font-family: 'Avenir';
-    font-weight: 400;
+  &__contact-location,
+  &__contact-link {
+    @include mobile-footerCopy-typekit;
     color: $silver;
     text-decoration: none;
     margin-bottom: 1.25rem;
   }
 
   &__copyright {
-    font-family: 'Avenir';
-    font-weight: 400;
+    @include mobile-footerCopy-typekit;
     color: $white;
     padding-bottom: 2rem;
   }
@@ -136,25 +183,77 @@
 
 
 
-// /* media query for mobile*/
-// /* media query for tablet*/
-// /* media query for  desktops*/
 
-// @media (max-width: 767px) {
-//     .example {
-//         font-size: 10px;
-//     }
-// }
+// // /* media query for tablet*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
 
 
-// @media (min-width: 768px) and (max-width: 1279px) {
-//         .example {
-//             font-size: 10px;
-//         }
-// }
+  .nav {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $band-site-black;
+  }
+    .nav__image {
+      max-width: 7.5rem;
+    }
 
-// @media (min-width: 1280px) {
-//     .example {
-//         font-size: 10px;
-//     }
-// }
+    .nav__list {
+      justify-content: space-between;
+      margin: 0;
+      padding: 0 0 0 2rem;
+      list-style: none;
+      display: flex;
+      width: 28%;
+      font-family: "Avenir";
+      font-weight: 400;
+    }
+ 
+.hero {
+  height:25vh;
+}
+
+.hero__title {
+  @include desk-page-header-typekit
+}
+  .about__container {
+    padding: 5rem;
+  }
+
+  .article__copy-column {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.article__copy {
+    width: 50%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.photo-gallery__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-gallery__images-item {
+  width: 30.33%
+  height: auto; 
+  margin-bottom: 1rem;
+}
+
+}
+
+/* media query for  desktops*/
+
+
+
+@media (min-width: 1280px) {
+    .example {
+        font-size: 10px;
+    }
+}
