@@ -241,6 +241,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .photo-gallery__images-item {
     width: 30%;
@@ -294,6 +295,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .photo-gallery__images-item {
     width: 30%;
