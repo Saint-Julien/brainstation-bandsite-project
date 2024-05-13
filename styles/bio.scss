@@ -81,7 +81,6 @@
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-   
   }
 
   &__band-image {
@@ -92,12 +91,11 @@
   }
 
   .about__quote {
-   @include mobile-subheader-typekit;
+    @include mobile-subheader-typekit;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    }
-
+  }
 }
 
 .article__title {
@@ -145,9 +143,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 2rem 0 1.5rem 0;
-    
   }
-  
 
   &__social {
     padding-bottom: 2rem;
@@ -174,6 +170,14 @@
     margin-bottom: 1.25rem;
   }
 
+  &__contact-link {
+    color: $silver;
+  }
+
+  &__contact-link:hover {
+    color: $white;
+  }
+
   &__copyright {
     @include mobile-footerCopy-typekit;
     color: $white;
@@ -181,13 +185,9 @@
   }
 }
 
-
-
-
-// // /* media query for tablet*/
+// /* media query for tablet*/
 
 @media (min-width: 768px) and (max-width: 1279px) {
-
 
   .nav {
     margin: auto;
@@ -196,28 +196,32 @@
     align-items: center;
     background-color: $band-site-black;
   }
-    .nav__image {
-      max-width: 7.5rem;
-    }
 
-    .nav__list {
-      justify-content: space-between;
-      margin: 0;
-      padding: 0 0 0 2rem;
-      list-style: none;
-      display: flex;
-      width: 28%;
-      font-family: "Avenir";
-      font-weight: 400;
-    }
- 
-.hero {
-  height:25vh;
-}
+  .nav__image {
+    max-width: 7.5rem;
+  }
 
-.hero__title {
-  @include desk-page-header-typekit
-}
+  .nav__list {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    list-style: none;
+    display: flex;
+    width: 28%;
+    font-family: "Avenir";
+    font-weight: 400;
+  }
+
+  .hero {
+    height: 25vh;
+  }
+
+  .hero__title {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
   .about__container {
     padding: 5rem;
   }
@@ -226,34 +230,88 @@
     display: flex;
     margin-left: 5rem;
     margin-right: 5rem;
-}
+  }
 
-.article__copy {
+  .article__copy {
     width: 50%;
     padding: 0 1rem;
     box-sizing: border-box;
+  }
+
+  .photo-gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-gallery__images-item {
+    width: 30.33%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
 }
 
-.photo-gallery__images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.photo-gallery__images-item {
-  width: 30.33%
-  height: auto; 
-  margin-bottom: 1rem;
-}
-
-}
-
-/* media query for  desktops*/
-
-
+// /* media query for  desktops*/
 
 @media (min-width: 1280px) {
-    .example {
-        font-size: 10px;
-    }
+
+  .nav {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $band-site-black;
+  }
+
+  .nav__image {
+    max-width: 7.5rem;
+  }
+
+  .nav__list {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    list-style: none;
+    display: flex;
+    width: 28%;
+    font-family: "Avenir";
+    font-weight: 400;
+  }
+
+  .hero {
+    height: 25vh;
+  }
+
+  .hero__title {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .about__container {
+    padding: 5rem;
+  }
+
+  .article__copy-column {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .article__copy {
+    width: 50%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .photo-gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo-gallery__images-item {
+    width: 30%;
+    height: auto;
+  }
 }
